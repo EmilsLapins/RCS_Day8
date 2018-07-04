@@ -46,10 +46,13 @@ namespace Day8
         }
         public void MasivuUzdevums()
         {
-            
+
+            Console.WriteLine("Cik daudz zvaigznu bus masiva?!");
+            int skaititajs = Convert.ToInt16(Console.ReadLine());
+
             string Zvaigznite = "*";
 
-            string[] masivsViens = new string[5]; // radam masivu, kura var ievadit 5 vertibas.
+            string[] masivsViens = new string[skaititajs]; // radam masivu, kura var ievadit 5 vertibas.
 
             // Bez 3 for loopiem var iztikt !
             /* for (int i = 0; i < 5; i++)  
@@ -59,7 +62,7 @@ namespace Day8
                 Zvaigznite = Zvaigznite + "*";
             } */
 
-            for (int i = 0; i < 5; i++) // augusa seciba
+            for (int i = 0; i < skaititajs; i++) // augusa seciba
             {
                 
                 masivsViens[i] = Zvaigznite;  // masivam pieksiram vertibas seit, velak izmantojam ari dilstosa seciba.
@@ -70,7 +73,7 @@ namespace Day8
                 
             }
            
-            for (int i = 4; i >= 0; i--) // dilstosa seciba
+            for (int i = skaititajs - 1; i >= 0; i--) // dilstosa seciba
             {
                 Console.WriteLine(masivsViens[i]);
             }
