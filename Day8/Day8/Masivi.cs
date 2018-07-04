@@ -47,12 +47,12 @@ namespace Day8
         public void MasivuUzdevums()
         {
 
-            Console.WriteLine("Cik daudz zvaigznu bus masiva?!");
+            Console.WriteLine("Cik daudz zvaigznu bus masiva?");
             int skaititajs = Convert.ToInt16(Console.ReadLine());
 
             string Zvaigznite = "*";
 
-            string[] masivsViens = new string[skaititajs]; // radam masivu, kura var ievadit 5 vertibas.
+            string[] masivsViens = new string[skaititajs]; // radam masivu, kura var ievadit x vertibas.
 
             // Bez 3 for loopiem var iztikt !
             /* for (int i = 0; i < 5; i++)  
