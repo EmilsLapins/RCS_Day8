@@ -20,25 +20,34 @@ namespace Day8
         public void Zvaigznite()
         {
             Console.WriteLine("Ludzu ievadiet skaitli!");
-            int Sakums = Convert.ToInt16(Console.ReadLine());
+            int Robeza = Convert.ToInt16(Console.ReadLine());
 
             string Zvaigznite = "*";
 
-            if (Sakums > 0)
+            if (Robeza <= 0)
             {
-                for (int i = 1; i < Sakums + 1; i++)
-                {
-                    Console.WriteLine(Zvaigznite);
+                Console.WriteLine("Kludaina ievade!");
 
+            }
+            else
+            {
+
+                for (int i = 0; i < Robeza; i++)
+                {
+
+
+                    Console.WriteLine(Zvaigznite);
                     Zvaigznite = Zvaigznite + "*";
 
+
+
                 }
-            } else
-            {
-                Console.WriteLine("Error!");
             }
+            
+            
+
 
         }
-      
+
     }
 }

@@ -11,31 +11,35 @@ namespace Day8
         static void Main(string[] args)
         {
             // switch un case izvelni!!!
-            Console.WriteLine("Izveleties uzdevumu- 1 vai 2 ");
-            string choice = Console.ReadLine();
-            int ch = Convert.ToInt16(choice);
+            CikluUzdevumi CikluUzd = new CikluUzdevumi();
+            int Choice = 1;
 
-            CikluUzdevumi CikUzd = new CikluUzdevumi();
+            while (Choice != 0) {
+                Console.WriteLine("Izveleties uzdevumu- 1 vai 2 (0: Iziet!)");
 
+                Choice = Convert.ToInt16(Console.ReadLine());
 
-            switch (ch)
-            {
-                case 1:
-                    CikUzd.Zvaigznite();
+                switch (Choice)
+                {
+                    case 0:
 
-                    break;
-                case 2:
-                    
-                    break;
-              
+                        break;
 
-                default:
-                    Console.WriteLine("Nepareiza ievade!");
-                    break;
+                    case 1:
+
+                        CikluUzd.Zvaigznite();
+
+                        break;
+                    case 2:
+                        Console.WriteLine("Placeholder");
+
+                        break;
+
+                    default:
+                        Console.WriteLine("Nepareiza ievade!");
+                        break;
+                }
             }
-            Console.ReadLine();
-
-
         }
     }
 }
