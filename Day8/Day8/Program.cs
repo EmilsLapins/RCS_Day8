@@ -13,9 +13,11 @@ namespace Day8
             // switch un case izvelni!!!
             CikluUzdevumi CikluUzd = new CikluUzdevumi();
             int Choice = 1;
+            Masivi masivs1 = new Masivi();
+
 
             while (Choice != 0) {
-                Console.WriteLine("Izveleties uzdevumu- 1 vai 2 (0: Iziet!)");
+                Console.WriteLine("Izveleties uzdevumu- 1: Zvaigznites 2: Massivi 3: MasivuEglite (0: Iziet!)");
 
                 Choice = Convert.ToInt16(Console.ReadLine());
 
@@ -31,7 +33,13 @@ namespace Day8
 
                         break;
                     case 2:
-                        Console.WriteLine("Placeholder");
+                        
+                        masivs1.IzvaditMasivu();
+
+                        break;
+                    case 3:
+
+                        masivs1.MasivuUzdevums();
 
                         break;
 
@@ -40,6 +48,9 @@ namespace Day8
                         break;
                 }
             }
+
+
+
         }
     }
 }
