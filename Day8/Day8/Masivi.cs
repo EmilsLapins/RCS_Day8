@@ -20,7 +20,6 @@ namespace Day8
 
             for (int i = 0; i < 5; i++)
             {
-                
                 Console.WriteLine(piemraMasivs[i]);
             }
 
@@ -36,20 +35,14 @@ namespace Day8
             for (int i = 0; i <5; i++)
             {
                 Console.WriteLine(stringMasivs[i]);
-
             }
 
             for (int i = 4; i >= 0; i--)
             {
-
                 Console.WriteLine(stringMasivs[i]);
-
             }
             // parvediot un apvienot so piemeru, ar ieprieksejo. Katra elementa vertibu pieskiram cikla!
-
-
-
-
+            
         }
         public void MasivuUzdevums()
         {
